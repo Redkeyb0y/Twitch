@@ -1,4 +1,11 @@
-# -*- coding: utf-8 -*-
+import signal
+
+def signal_handler(sig, frame):
+    print("Ctrl+C is disabled. To exit, use another method.")
+    # Optionally, you can perform other actions here instead of just printing a message.
+
+# Set the signal handler to ignore SIGINT
+signal.signal(signal.SIGINT, signal_handler)
 
 import logging
 from colorama import Fore
