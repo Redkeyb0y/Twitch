@@ -87,7 +87,7 @@ twitch_miner = TwitchChannelPointsMiner(
         chat=ChatPresence.ONLINE,               # Join irc chat to increase watch-time [ALWAYS, NEVER, ONLINE, OFFLINE]
         bet=BetSettings(
             strategy=Strategy.SMART,            # Choose you strategy!
-            percentage=5,                       # Place the x% of your channel points
+            percentage=10,                      # Place the x% of your channel points
             percentage_gap=20,                  # Gap difference between outcomesA and outcomesB (for SMART strategy)
             max_points=50000,                   # If the x percentage of your channel points is gt bet_max_points set this value
             stealth_mode=True,                  # If the calculated amount of channel points is GT the highest bet, place the highest value minus 1-2 points Issue #33
@@ -126,6 +126,8 @@ twitch_miner.mine(
        Streamer("kennyS", settings=StreamerSettings(make_predictions=True , follow_raid=True  , claim_drops=True , watch_streak=True , bet=BetSettings(strategy=Strategy.SMART , percentage=5 , stealth_mode=False, percentage_gap=20 , max_points=5000 , filter_condition=FilterCondition(by=OutcomeKeys.TOTAL_POINTS,     where=Condition.LTE, value=800 ) ) )),
        Streamer("ArrowCS", settings=StreamerSettings(make_predictions=True  , follow_raid=True , claim_drops=True  , watch_streak=True , bet=BetSettings(strategy=Strategy.SMART , percentage=5 , stealth_mode=False,  percentage_gap=20 , max_points=5000 , filter_condition=FilterCondition(by=OutcomeKeys.TOTAL_POINTS,      where=Condition.LTE, value=800 ) ) )),
        Streamer("ohnePixel", settings=StreamerSettings(make_predictions=True  , follow_raid=True , claim_drops=True  , watch_streak=True , bet=BetSettings(strategy=Strategy.SMART , percentage=5 , stealth_mode=False,  percentage_gap=20 , max_points=5000 , filter_condition=FilterCondition(by=OutcomeKeys.TOTAL_POINTS,      where=Condition.LTE, value=800 ) ) )),
+       Streamer("kennyS", settings=StreamerSettings(make_predictions=True , follow_raid=True  , claim_drops=True , watch_streak=True , bet=BetSettings(strategy=Strategy.SMART , percentage=5 , stealth_mode=False, percentage_gap=20 , max_points=5000 , filter_condition=FilterCondition(by=OutcomeKeys.TOTAL_POINTS,     where=Condition.LTE, value=800 ) ) )),
+
    ],                                  # Array of streamers (order = priority)
     followers=False,                    # Automatic download the list of your followers
     followers_order=FollowersOrder.ASC  # Sort the followers list by follow date. ASC or DESC
