@@ -115,7 +115,6 @@ twitch_miner = TwitchChannelPointsMiner(
 
 twitch_miner.mine(
     [
-       Streamer("Mauisnake", settings=StreamerSettings(make_predictions=True  , follow_raid=True , claim_drops=True  , watch_streak=True , bet=BetSettings(strategy=Strategy.SMART , percentage=5 , stealth_mode=False,  percentage_gap=20 , max_points=5000 , filter_condition=FilterCondition(by=OutcomeKeys.TOTAL_POINTS,      where=Condition.LTE, value=800 ) ) )),
        Streamer("banks", settings=StreamerSettings(make_predictions=True , follow_raid=True  , claim_drops=True , watch_streak=True , bet=BetSettings(strategy=Strategy.SMART , percentage=5 , stealth_mode=False, percentage_gap=20 , max_points=5000 , filter_condition=FilterCondition(by=OutcomeKeys.TOTAL_POINTS,     where=Condition.LTE, value=800 ) ) )),
        Streamer("PimpCS", settings=StreamerSettings(make_predictions=True , follow_raid=True  , claim_drops=True , watch_streak=True , bet=BetSettings(strategy=Strategy.SMART , percentage=5 , stealth_mode=False, percentage_gap=20 , max_points=5000 , filter_condition=FilterCondition(by=OutcomeKeys.TOTAL_POINTS,     where=Condition.LTE, value=800 ) ) )),
        Streamer("smooyacs", settings=StreamerSettings(make_predictions=True , follow_raid=True  , claim_drops=True , watch_streak=True , bet=BetSettings(strategy=Strategy.SMART , percentage=5 , stealth_mode=False, percentage_gap=20 , max_points=5000 , filter_condition=FilterCondition(by=OutcomeKeys.TOTAL_POINTS,     where=Condition.LTE, value=800 ) ) )),
