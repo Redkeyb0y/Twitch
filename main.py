@@ -59,7 +59,7 @@ twitch_miner = TwitchChannelPointsMiner(
             disable_notification=True,                                              # Revoke the notification (sound/vibration)
         ),
         discord=Discord(
-            webhook_api="https://discord.com/api/webhooks/1286733709373866014/MdKwS--hgsVZsdP8Bgfq8m_9f2GsnFH_Q7HzSItCOk8Sgwya0N7kGj1tIi3LuxIRGCHb",  # Discord Webhook URL
+            webhook_api="https://discord.com/api/webhooks/1326166040530387026/SrXOzzPUGDTsUiGkKiu_OLKdpyUuVY9ceGc-F5x66FcPfTsvCwrc2griH68HAFapsll1",  # Discord Webhook URL
             events=[Events.STREAMER_ONLINE, Events.STREAMER_OFFLINE,
                     Events.GAIN_FOR_CLAIM, Events.GAIN_FOR_WATCH, Events.GAIN_FOR_RAID],                                  # Only these events will be sent to the chat
         ),
@@ -117,6 +117,8 @@ twitch_miner.mine(
     [
        Streamer("launders", settings=StreamerSettings(make_predictions=True , follow_raid=True  , claim_drops=True , watch_streak=True , bet=BetSettings(strategy=Strategy.SMART , percentage=5 , stealth_mode=False, percentage_gap=20 , max_points=5000 , filter_condition=FilterCondition(by=OutcomeKeys.TOTAL_POINTS,     where=Condition.LTE, value=800 ) ) )),
        Streamer("PimpCS", settings=StreamerSettings(make_predictions=True , follow_raid=True  , claim_drops=True , watch_streak=True , bet=BetSettings(strategy=Strategy.SMART , percentage=5 , stealth_mode=False, percentage_gap=20 , max_points=5000 , filter_condition=FilterCondition(by=OutcomeKeys.TOTAL_POINTS,     where=Condition.LTE, value=800 ) ) )),
+       Streamer("exerpas", settings=StreamerSettings(make_predictions=True , follow_raid=True  , claim_drops=True , watch_streak=True , bet=BetSettings(strategy=Strategy.SMART , percentage=5 , stealth_mode=False, percentage_gap=20 , max_points=5000 , filter_condition=FilterCondition(by=OutcomeKeys.TOTAL_POINTS,     where=Condition.LTE, value=800 ) ) )),
+       Streamer("natosaphix", settings=StreamerSettings(make_predictions=True , follow_raid=True  , claim_drops=True , watch_streak=True , bet=BetSettings(strategy=Strategy.SMART , percentage=5 , stealth_mode=False, percentage_gap=20 , max_points=5000 , filter_condition=FilterCondition(by=OutcomeKeys.TOTAL_POINTS,     where=Condition.LTE, value=800 ) ) )),
        Streamer("kennys", settings=StreamerSettings(make_predictions=True  , follow_raid=True , claim_drops=True  , watch_streak=True , bet=BetSettings(strategy=Strategy.SMART , percentage=5 , stealth_mode=False,  percentage_gap=20 , max_points=5000 , filter_condition=FilterCondition(by=OutcomeKeys.TOTAL_POINTS,      where=Condition.LTE, value=800 ) ) )),
        Streamer("jkaem", settings=StreamerSettings(make_predictions=True  , follow_raid=True , claim_drops=True  , watch_streak=True , bet=BetSettings(strategy=Strategy.SMART , percentage=5 , stealth_mode=False,  percentage_gap=20 , max_points=5000 , filter_condition=FilterCondition(by=OutcomeKeys.TOTAL_POINTS,      where=Condition.LTE, value=800 ) ) )),
        Streamer("ohnePixel", settings=StreamerSettings(make_predictions=True , follow_raid=True  , claim_drops=True , watch_streak=True , bet=BetSettings(strategy=Strategy.SMART , percentage=5 , stealth_mode=False, percentage_gap=20 , max_points=5000 , filter_condition=FilterCondition(by=OutcomeKeys.TOTAL_POINTS,     where=Condition.LTE, value=800 ) ) )),
